@@ -3,20 +3,39 @@
         font-size: 15px
         margin-right: 15px
         // &:nth-child(7)/???
-            
+
         //     margin-right: 0
+    .nav_item
+        padding-right: 10px
+        &:nth-child(8)
+            padding-right: 0
+    // .descr
+    //     // display: flex
+    //     // flex-wrap: wrap
+    //     // width: 100%
+    //     // &_1, &_2, &_3
+    //     //     // width: 57%
+    //     //     height: 100%
+    //     //     margin-top: 30px
+    //     &_1
+    //         margin-top: 39px
+    //     &_2, &_3
+    //         margin-top: 20px
+    // .news
+    //     &_1, &_3, &_2, &_4
+
+    //         width: 650px
+    //         // height: 188px
+    //     // &_1, &_3
+    //     //     right: 10px
+    //     .square_1, .square_3
+    //         right: -301px
     .marge
         margin-right: 0
+
     .title
         font-size: 60px
-    .descr
-        display: flex
-        flex-wrap: wrap
-        width: 100%
-        &_2, &_3
-            width: 47%
-            height: 100%
-            margin-top: 39px
+        line-height: 96px
     .icons
         &_up, &_down
             margin-right: 15px
@@ -29,52 +48,12 @@
             &_ball
                 width: 350px
                 height: 350px
-
-    .news
-        &_1, &_3, &_2, &_4
-            width: 685px
-    .square_3, .square_1
-            right: 60px
-    .form
-        padding: 58px 0 90px 0
-    .info
-        padding: 0
-    .swiper-slide
-        img
-            max-width: 765px
-            margin-left: 40px
-        .subtitle
-            padding-top: 35px
-      
-    .sliders_wrapper
-        max-width: 765px
-    .swiper
-        .text
-            top: 105px
-        &_button_next
-            right: -40px
-        &_button_prev
-            left: -40px
-    .form
-        .container
-            width: 765px
-        .perso
-            width: 255px
-        .comment
-            width: 540px
-        &_btn
-            width: 540px
-        
-
-    
-
-@media ( max-width: 991px )
-    .title
-        font-size: 50px
-    .nav_item
-        padding-right: 10px
-        &:nth-child(8)
-            padding-right: 0
+    .main_news, .main_title
+        padding: 0 80px
+    // .nav_item
+    //     padding-right: 10px
+    //     &:nth-child(8)
+    //         padding-right: 0
     .descr
         display: flex
         flex-wrap: wrap
@@ -84,24 +63,36 @@
             height: 100%
             margin-top: 30px
             font-size: 16px
-
         &_1
-            margin-top: 39px
-    .news
-        &_1, &_3
+            margin-top: 26px
+    // .news
+    //     &_1, &_3
 
-            width: 71%
-            height: 188px
-            padding: 0 15px 0 0
+    //         width: 71%
+    //         height: 188px
+    //         padding: 0 15px 0 0
+    .news
+        &_1, &_3, &_2, &_4
+            // width: 630px
+            width: 575px
+        &_1, &_3
+            left: 80px
 
         &_2, &_4
-            width: 70%
-            height: 188px
-            left: 313px
+            // width: 70%
+            // height: 188px
+            left: 290px
         .square_3, .square_1
-            right: -13px
-    .upload_news
-        margin: auto 218px
+            // right: -13px
+            right: 80px
+        .square_2, .square_4
+            left: 80px
+    // .upload_news
+    //     margin: auto 218px
+    .paragraphs
+        padding: 0 80px
+        &_2, &_3
+            margin-top: 20px
     .icons
         &_up, &_down
             width: 140px
@@ -113,31 +104,201 @@
                 width: 300px
                 height: 300px
                 margin-top: -30px
+    .swiper-slide
+        img
+            max-width: 730px
+            margin-left: 60px
 
-@media ( max-width: 767px )
-    .title
-        font-size: 60px
-    .nav_item
-        padding-right: 10px
-        &:nth-child(8)
-            padding-right: 0
+    .sliders_wrapper
+        max-width: 730px
+    .swiper
+        .text
+            top: 105px
+        .subtitle
+            padding-top: 35px
+        &_button_next
+            top: 38%
+            right: -20px
+        &_button_prev
+            left: -15px
+            top: 38%
+    .form
+        .container
+            width: 730px
+        .perso
+            width: 240px
+        .comment
+            width: 540px
+        &_btn
+            width: 540px
+    .info
+        padding: 0
+        &_blocks
+            width: 730px
+        &_btn
+            width: 730px
+        &_perso
+            padding: 57px 80px 0 80px
+            width: 730px
+            &_name, &_phone
+                width: 258px
+            &_phone
+                margin-left: 20px
+    .form
+        padding: 58px 0 90px 0
+
+    // .sliders_wrapper
+    //     max-width: 765px
+    // .swiper
+    //     .text
+    //         top: 105px
+        // &_button_next
+        //     right: -40px
+        // &_button_prev
+        //     left: -40px
+    // .form
+    //     .container
+    //         width: 765px
+    //     .perso
+    //         width: 255px
+    //     .comment
+    //         width: 540px
+    //     &_btn
+    //         width: 540px
+
+@media ( max-width: 991px )
+    // .main_news, .main_title
+    //     padding: 0 80px
+    // .title
+    //     font-size: 50px
+    // // .nav_item
+    // //     padding-right: 10px
+    // //     &:nth-child(8)
+    // //         padding-right: 0
+    .nav_link
+        font-size: 14px
+        margin-right: 12px
     .descr
-        display: flex
-        flex-wrap: wrap
-        width: 100%
         &_1, &_2, &_3
-            // width: 57%
+            width: 100%
             height: 100%
             margin-top: 30px
+            font-size: 16px
         &_1
-            margin-top: 39px
+            margin-top: 25px
+    .title
+        font-size: 46px
+        line-height: 60px
+        margin-top: 30px
+    .subtitle
+        font-size: 32px
+        line-height: 30px
+    // // .news
+    // //     &_1, &_3
+
+    // //         width: 71%
+    // //         height: 188px
+    // //         padding: 0 15px 0 0
     .news
         &_1, &_3, &_2, &_4
+            width: 558px
+            line-height: 20px
 
+        &_1, &_3
+            left: 80px
+        &_2, &_4
+            left: 270px
+        .square_3, .square_1, .square_4, .square_2
+            width: 175px
+        .square_1, .square_3
+            right: 53px
+    // // .upload_news
+    // //     margin: auto 218px
+    .icons
+        &_up, &_down
+            width: 120px
+            height: 120px
+            margin-right: 6px
+            img
+                width: 96px
+                height: 96px
+        &_middle
+            width: 450px
+            height: 450px
+            padding: 105px 0
+            &_ball
+                width: 270px
+                height: 270px
+                margin-top: -17px
+
+    .sliders
+        padding-bottom: 30px
+        .swiper-slide
+            img
+                max-width: 700px
+                margin-left: 71px
+        .sliders_wrapper
+            max-width: 700px
+        .swiper
+            .text
+                top: 80px
+            &_button_next
+                right: 0
+                top: 35%
+            &_button_prev
+                left: 0
+                top: 35%
+            .dots
+                margin-top: 10px
+    .form
+        padding: 35px 0 75px 0
+        .container
+            width: 700px
+        .perso
+            width: 226px
+        .comment
+            width: 481px
+        &_btn
+            width: 481px
+    .info
+        padding: 0
+        &_blocks
+            width: 730px
+        &_btn
+            width: 730px
+        &_perso
+            padding: 57px 80px 0 80px
+            width: 730px
+            &_name, &_phone
+                width: 258px
+            &_phone
+                margin-left: 20px
+        &_blocks
+            width: 700px
+   
+
+@media ( max-width: 767px )
+
+    // .nav_item
+    //     padding-right: 10px
+    //     &:nth-child(8)
+    //         padding-right: 0
+    // .descr
+    //     display: flex
+    //     flex-wrap: wrap
+    //     width: 100%
+    //     &_1, &_2, &_3
+    //         // width: 57%
+    //         height: 100%
+    //         margin-top: 30px
+    //     &_1
+    //         margin-top: 39px
+    .news
+        &_1, &_3, &_2, &_4
             width: 650px
-            // height: 188px
-        // &_1, &_3
-        //     right: 10px
+            height: 188px
+        &_1, &_3
+            right: 10px
         .square_1, .square_3
             right: -301px
     .icons
