@@ -184,19 +184,21 @@
         .square_3, .square_1, .square_4, .square_2
             width: 150px
         .square_1, .square_3
-            right: 0
+            right: 20px
         .square_4, .square_2
             left: 30px
-    // // .upload_news
-    // //     margin: auto 218px
+    // .upload_news
+    //     // margin: auto 218px
+    //     &:hover
+            
     .icons
         &_up, &_down
-            width: 120px
-            height: 120px
+            width: 105px
+            height: 105px
             margin-right: 6px
             img
-                width: 96px
-                height: 96px
+                width: 80px
+                height: 80px
         &_middle
             width: 450px
             height: 450px
@@ -287,6 +289,10 @@
                 font-size: 14px
             .dropdown_menu_item
                 margin: 0
+        .nav_item:hover span
+            background-color: rgba(0, 194, 255, .2)
+            width: 100%
+            height: 15px
     .hamburger
         display: block
         position: absolute
@@ -311,33 +317,90 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
-    .nav_item:hover span
-        background-color: rgba(0, 194, 255, .2)
-        width: 100%
-        height: 15px
+    
     .marge
         margin-right: 8px
     .main_news, .main_title
         padding: 0 30px
-    // .main
-    //     padding: 0 29px
-    // .main_title
-    //     padding: 0 29px
-    //     .subtitle
-    //         font-size: 28px
-    //         line-height: 33px
-    //         margin-top: 6px
-    //     .descr
-    //         &_1
-    //             width: 317px
-    //             height: 504px
-    //             margin-top: 69px
-    //         &_2, &_3 
-    //             display: none
-    // .title
-    //     line-height: 54px
-       
+    .icons
+        &_up, &_down
+            width: 100px
+            height: 100px
+            img
+                width: 70px
+                height: 70px
+        &_middle
+            width: 350px
+            height: 350px
+            padding: 135px 0
+            &_ball
+                width: 210px
+                height: 210px
+                margin-top: -16%
+    .upload_news
+        // margin: auto 218px
+        &:hover
+    .doctor
+        width: 528px
+        height: 337px
+        &_img
+            top: -106px
+    .sliders
+        .sliders_wrapper
+            max-width: 630px
+        .swiper
+            .swiper-slide
+                img
+                    max-width: 630px
+                .subtitle
+                    padding-top: 10px
+                    font-size: 24px
+                .text
+                    top: 40px
+            &_button_prev, &_button_next
+                background-color: #fff
+                border: 1px solid rgba(0, 0, 0, .25)
+                top: 30%
+            &_button_prev
+                left: 27px
+            &_button_next
+                right: 27px
+            .btn
+                margin-top: 0
+@media ( max-width: 575px )
+    nav
+        padding: 0
+        .nav
+            align-items: flex-start
+            width: 75%
+            &_item:hover span
+                background-color: rgba(0, 194, 255, .6)
+                width: 44%  
+            &:hover .dropdown_menu
+                left: 117px
+                background-color: rgba(0, 194, 255, .6)
 
+                    
+            
+
+
+    .main
+        padding: 0 29px
+    .main_title
+        padding: 0 29px
+        .subtitle
+            font-size: 28px
+            line-height: 33px
+            margin-top: 6px
+        .descr
+            &_1
+                width: 317px
+                height: 504px
+                margin-top: 69px
+            &_2, &_3 
+                display: none
+    .title
+        line-height: 54px
     // .news
     //     &_1, &_3, &_2, &_4
     //         width: 75%
@@ -352,17 +415,5 @@
     //     .square_2, .square_4
     //         left: 30px
     //         width: 150px
-    .icons
-        &_up, &_down
-            width: 145px
-            height: 150px
-        &_middle
-            width: 500px
-            height: 500px
-            padding: 135px 0
-            &_ball
-                width: 300px
-                height: 300px
-                // margin-top: -30px
 
-    //        
+      
