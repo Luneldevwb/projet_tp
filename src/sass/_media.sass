@@ -162,7 +162,7 @@
         font-size: 46px
         line-height: 60px
         margin-top: 30px
-    
+
     .subtitle
         font-size: 32px
         line-height: 30px
@@ -190,7 +190,7 @@
     // .upload_news
     //     // margin: auto 218px
     //     &:hover
-            
+
     .icons
         &_up, &_down
             width: 105px
@@ -213,18 +213,26 @@
         .swiper-slide
             img
                 max-width: 700px
-                margin-left: 71px
+                margin-left: 35px
+            .subtitle
+                padding-top: 20px
         .sliders_wrapper
             max-width: 700px
         .swiper
             .text
-                top: 80px
+                top: 60px
+                .btn
+                    margin-top: 10px
             &_button_next
-                right: 0
+                right: 10px
                 top: 35%
+                background-color: #fff
+                border: 1px solid rgba(0,0,0,0.25)
             &_button_prev
-                left: 0
+                left: 10px
                 top: 35%
+                background-color: #fff
+                border: 1px solid rgba(0,0,0,0.25)
             .dots
                 margin-top: 10px
     .form
@@ -240,7 +248,7 @@
         &_gender_label
             &:after, &:before
                 margin-right: -4px
-                
+
     .info
         padding: 0
         &_blocks
@@ -258,7 +266,6 @@
                 width: 540px
         &_blocks
             width: 700px
-   
 
 @media ( max-width: 767px )
     .nav
@@ -270,7 +277,7 @@
         flex-direction: column
         justify-content: center
         height: 100vh
-        transition: all 1s ease 
+        transition: all 1s ease
         background-color: rgba(0, 66, 114, .8)
         &_active
             left: 0
@@ -280,7 +287,7 @@
         &_link
             font-size: 20px
         .nav_item:hover .dropdown_menu
-            background-color: rgba(0, 194, 255, .2)  // A REVOIR PLUTARD!!!!!
+            background-color: rgba(0, 194, 255, .2) // A REVOIR PLUTARD!!!!!
             padding: 3px 0 5px 7px
             height: 12vh
             left: 96px
@@ -317,7 +324,7 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
-    
+
     .marge
         margin-right: 8px
     .main_news, .main_title
@@ -352,6 +359,7 @@
             .swiper-slide
                 img
                     max-width: 630px
+                    margin-left: 70px
                 .subtitle
                     padding-top: 10px
                     font-size: 24px
@@ -373,10 +381,10 @@
         .nav
             align-items: flex-start
             width: 75%
-            margin-left: 25px
+            z-index: 2
             &_item:hover span
                 background-color: rgba(0, 194, 255, .6)
-                width: 44%  
+                width: 44%
             &:hover .dropdown_menu
                 left: 94px
                 background-color: rgba(0, 194, 255, .6)
@@ -391,15 +399,15 @@
             line-height: 33px
             margin-top: 6px
         .descr
+            flex-direction: column-reverse
             &_1
-                display: block
                 width: 317px
                 margin-top: 69px
                 font-size: 14px
-            &_2, &_3 
+            &_2, &_3
                 display: none
     .main_news
-        padding: 0 29px
+        padding: 0 29px 58px 29px
         .title
             line-height: 54px
             margin-top: 35px
@@ -422,14 +430,103 @@
                 margin-top: 527px
             .mob_3, .mob_4
                 margin-top: 431%
-
-
             //     left: 190px
             // &_1, &_3
             //     left: 30px
             .square_1, .square_3, .square_2, .square_4
                 width: 317px
                 left: 29px
-           
+        .upload_news
+            width: 317px
+            margin-top: 700%
+    .icons
+        margin-top: 0
+        padding: 0 29px
+        &_block
+            display: -webkit-box
+            -webkit-box-pack: justify
+            flex-wrap: wrap
+            width: 317px
+        &_up, &_down
+            width: 119px
+            height: 125px
+            margin: 0
+            margin-bottom: 58px
+            &:last-child
+                margin-bottom: 0px
+        &_middle
+            width: 312px
+            height: 325px
+            padding: 85px 63px
+            margin: 43px 0 55px 0
+            &_ball
+                width: 191px
+                height: 188px
+    .doctor
+        display: none
+    .paragraphs
+        padding: 0 29px
+        &_1, &_2, &_3
+            width: 317px
+    .sliders
+        padding: 33px 29px 77px 29px
+        .sliders_wrapper
+            flex-direction: column
+            .sliders_squares
+                background: #e2e2e2
+                width: 317px
+            .sliders_1
+                background: #ff0000
+                width: 315.32px
+                margin-bottom: 31px
+            .sliders_2
+                margin-bottom: 31px
+        .swiper
+            margin-top: 77px
+            max-width: 314px
+            height: 496px
+            .swiper-slide
+                img
+                    max-width: 314px
+                    height: 496px
+                    margin: 0
+                .subtitle
+                    padding: 40px 0 0 45px
+                .text
+                    padding: 20px 26px 48px 45px
+                    p
+                        margin-top: 20px
+                        width: 243px
+                        height: 289px
+                        span
+                            display: none
+    //             .btn
+    //                 margin-top: 20px
+    //     &_button_prev
+    //         left: -25px
+    //     &_button_next
+    //         right: -70px
 
-      
+    // .sliders
+    //     .sliders_wrapper
+    //         max-width: 630px
+    //     .swiper
+    //         .swiper-slide
+    //             img
+    //                 max-width: 630px
+    //                 margin-left: 70px
+    //             .subtitle
+    //                 padding-top: 10px
+    //                 font-size: 24px
+    //             .text
+    //                 top: 40px
+    //         &_button_prev, &_button_next
+    //             background-color: #fff
+    //             border: 1px solid rgba(0, 0, 0, .25)
+    //             top: 30%
+    //         &_button_prev
+    //             left: 27px
+    //         &_button_next
+    //             right: 27px
+    //         .btn
+    //             margin-top: 0
