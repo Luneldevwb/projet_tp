@@ -1,0 +1,19 @@
+{
+  "name": "projet_tp",
+  "version": "1.0.0",
+  "description": "projet_tp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luneldevwb/projet_tp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luneldevwb/projet_tp/issues"
+  },
+  "homepage": "https://github.com/Luneldevwb/projet_tp#readme"
+}
